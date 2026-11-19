@@ -349,3 +349,19 @@ h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.12rem; letter
   .js .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .card { transition: none; }
 }
+
+/* ---------- Services (digital marketing & growth) ---------- */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.service { padding: 30px 28px; display: flex; flex-direction: column; transition: transform .3s ease, box-shadow .3s ease; }
+.service:hover { transform: translateY(-4px); box-shadow: 0 30px 70px rgba(124,104,190,.22), inset 0 1px 0 #fff; }
+.service h3 { font-size: 1.28rem; margin: 14px 0 10px; }
+.service p:not(.tags) { color: var(--ink-soft); font-size: .94rem; }
+.service-num { font-family: var(--f-mono); color: var(--accent); }
+.service-hot { background: linear-gradient(140deg, #D9CCFF, #FFD6EA 55%, #FFE7CF); }
+.service-hot .service-num { color: var(--ink-soft); }
+.cta-strip {
+  margin-top: 26px; padding: 26px 30px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+}
+.cta-strip p { font-family: var(--f-display); font-weight: 700; font-size: 1.25rem; letter-spacing: -.01em; }
+@media (max-width: 960px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) { .services-grid { grid-template-columns: 1fr; } .cta-strip { padding: 24px 22px; } }
