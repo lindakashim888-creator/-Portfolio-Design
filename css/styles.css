@@ -365,3 +365,14 @@ h3 { font-family: var(--f-display); font-weight: 700; font-size: 1.12rem; letter
 .cta-strip p { font-family: var(--f-display); font-weight: 700; font-size: 1.25rem; letter-spacing: -.01em; }
 @media (max-width: 960px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 760px) { .services-grid { grid-template-columns: 1fr; } .cta-strip { padding: 24px 22px; } }
+
+/* ---------- Professional hero title (overrides earlier display headline) ---------- */
+.name-title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -.025em;
+  color: var(--ink);
+  margin-top: 0;
+}
